@@ -57,18 +57,16 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
+<style lang="scss" scoped>
 .icon {
   width: 44px;
   height: 44px;
   background-color: var(--bg-secondary);
   border-color: var(--border-color);
-  @apply relative m-0 p-2 top-0 cursor-pointer rounded border transition-all duration-200 ease-in-out;
 
   &:hover {
     transform: translateY(-1px);
     border-color: var(--border-color-secondary);
-    @apply text-white;
   }
   &.selected {
     color: var(--color-primary);
@@ -82,7 +80,6 @@ export default {
 
     &:hover {
       border-color: var(--border-color);
-      @apply text-primary-900 bg-primary-200;
     }
   }
 }

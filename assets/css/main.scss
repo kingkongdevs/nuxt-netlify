@@ -1,0 +1,38 @@
+@import 'variables'; // Change these defaults to match your page style
+@import 'vendor/bootstrap/bootstrap';
+@import 'mixins';
+
+// Comment these out if you're not using the following elements. All are enabled by default...
+
+/* purgecss start ignore */
+@import 'vendor/swiper.scss'; // Default swiper styles
+/* purgecss end ignore */
+
+// Default Styles
+/* purgecss start ignore */
+@import 'typography';
+@import 'global';
+@import 'animation';
+
+// Page Specific Styles
+@import 'pages/blog';
+
+// Section Specific Styles
+@import 'sections/accordion';
+@import 'sections/table';
+@import 'sections/steps';
+@import 'sections/hero';
+@import 'sections/pagetitle';
+
+// Generic components
+@import 'components/form';
+@import 'components/button';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/checklist';
+
+// Additional Modules
+// @import 'components/countdown-timer';
+// @import 'components/multi-step-form';
+
+/* purgecss end ignore */

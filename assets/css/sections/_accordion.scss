@@ -1,0 +1,25 @@
+.section-accordion {
+	.accordion {
+		width: 100%;
+		display: block;
+
+		dt {
+			cursor: pointer;
+			background: gray;
+			padding: 20px;
+			margin-bottom: 5px;
+
+			&:after {
+				content: '+';
+				float: right;
+			}
+			&.active:after {
+				content: '-';
+			}
+		}
+
+		dd {
+			display: none;
+		}
+	}
+}

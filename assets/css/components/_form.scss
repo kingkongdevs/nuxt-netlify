@@ -1,0 +1,125 @@
+form {
+  input:not([type='checkbox']):not([type='radio']):not([type='submit']),
+  textarea,
+  select {
+    width: 100%;
+    padding: 20px 15px 20px 50px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 2rem;
+    line-height: 1;
+
+    @include media-breakpoint-up(sm) {
+      padding: 20px 15px 20px 70px;
+    }
+
+    &:-internal-autofill-selected {
+      background-color: white !important;
+      background-image: none !important;
+      color: -internal-light-dark-color(black, white) !important;
+    }
+  }
+
+  textarea {
+    height: 210px !important;
+  }
+
+  select {
+    appearance: none;
+  }
+
+  .field-error {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    color: red;
+    font-size: 1.6rem;
+  }
+
+  .form-messages {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+
+    &.error {
+      color: red;
+    }
+  }
+
+  .ajax-loader {
+    display: none !important;
+  }
+  &.submitting {
+    .ajax-loader {
+      display: block !important;
+      margin: 10px 0 0;
+    }
+  }
+
+  br {
+    display: none;
+  }
+
+  .wpcf7-not-valid-tip {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 5px 0px 10px;
+  }
+
+  .wpcf7-response-output {
+    margin: 15px 0 0 !important;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+  }
+
+  .wpcf7-form-control-wrap,
+  label {
+    display: block;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 15px;
+      height: 15px;
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+
+      @include media-breakpoint-up(md) {
+        width: 16px;
+        height: 16px;
+        left: 34px;
+        top: 24px;
+      }
+    }
+
+    &[class*='name']:before,
+    &[for*='name']:before {
+      //	background: url('../images/icon-user.png') no-repeat center/contain;
+    }
+    &[class*='email']:before,
+    &[for*='email']:before {
+      //	background: url('../images/icon-email.png') no-repeat center/contain;
+    }
+    &[class*='phone']:before,
+    &[class*='mobile']:before {
+      //	background: url('../images/icon-phone.png') no-repeat center/contain;
+    }
+    &[class*='question']:before,
+    &[class*='comment']:before,
+    &[for*='message']:before {
+      //	background: url('../images/icon-question.png') no-repeat center/contain;
+    }
+  }
+}
+
+.form-group {
+  width: 100%;
+  margin: 0;
+  display: block;
+}

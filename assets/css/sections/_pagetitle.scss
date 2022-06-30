@@ -1,0 +1,29 @@
+.section-pagetitle {
+	background: #2c2c2c;
+	color: #fff;
+
+	h1:last-child {
+		margin-bottom: 0;
+	}
+
+	.breadcrumbs {
+		text-align: center;
+		margin: 0 auto;
+
+		.sep {
+			margin: 0 10px;
+		}
+	}
+
+	.entry-data {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+
+		div {
+			margin: 0 5px;
+		}
+	}
+}
